@@ -1,0 +1,11 @@
+username = 'admin'
+password = '1234'
+while True:
+  user = input('enter user name : ')
+  password = input('enter password : ')
+  if password == password and username == user :
+    username = input('enter newuser name : ')
+    password = input('enter new password : ')
+    break
+print('Your new username is :',username)
+print('Your new password  :',password)
