@@ -1,0 +1,15 @@
+a = ['a','b','c','d','e','f','g','h','i','j','k','l','n','m','o','p','q','r','s','t','u','v','x','y','z']
+b = ['A','B','C','D','E','F','G','H','I','J','K','L','N','M','O','P','Q','R','S','T','U','V','X','Y','Z']
+s = input('Enter yor sentense:')
+c = len(s)
+d=0
+f=0
+for i in range(c):
+  if s[i] in b:
+    d+=1
+  if s[i] in a:
+    f+=1
+   
+print('Uppercase character number is {}'.format(d))
+print('Lowwercase character number is {}.'.format(f))
+print('Specialcase character number is {}.'.format(c-(f+d)))
